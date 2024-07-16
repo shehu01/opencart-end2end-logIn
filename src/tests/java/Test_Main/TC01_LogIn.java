@@ -4,11 +4,11 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import Tests_Base.TC_BaseClass;
+import Tests_Base.Testcase_Baseclass;
 import pageObj_Main.LoginPage_1;
 
 
-public class TC001_LogIn extends TC_BaseClass
+public class TC01_LogIn extends Testcase_Baseclass
 {
 	// WebDriver driver; This should never be here, else
 	// It ll not execute bcos ist already called from

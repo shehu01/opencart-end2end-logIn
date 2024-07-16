@@ -3,10 +3,10 @@ package Test_Main;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-import Tests_Base.TC_BaseClass;
+import Tests_Base.Testcase_Baseclass;
 import pageObj_Main.AddtoCart_2;
 
-public class TC002_AddToCart extends TC_BaseClass {
+public class TC02_AddToCart extends Testcase_Baseclass {
 
 
 	WebDriver driver;

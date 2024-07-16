@@ -2,10 +2,10 @@ package Test_Main;
 
 import org.testng.annotations.Test;
 
-import Tests_Base.TC_BaseClass;
+import Tests_Base.Testcase_Baseclass;
 import pageObj_Main.CheckCartItems_3;
 
-public class TC003_MyCart extends TC_BaseClass {
+public class TC03_MyCart extends Testcase_Baseclass {
 
 
 	@Test(priority = 2)

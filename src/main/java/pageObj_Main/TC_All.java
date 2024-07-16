@@ -13,6 +13,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import Tests_Base.Testcase_Baseclass;
+
 public class TC_All {
 	public WebDriver driver;
 	public Properties read;
@@ -108,17 +110,16 @@ public class TC_All {
 	}
 
 	@Test(priority = 10)
-	public void CMonth() throws InterruptedException {
+	public void CMonth() {
 		OrderPage_4 CMonth = new OrderPage_4(driver);
 		CMonth.ccExpMonth();
 		Select time2 = new Select(CMonth.ExpiryMonth);
-		time2.selectByVisibleText("12");
+		time2.selectByVisibleText(read.getProperty("cardExpiryMonth"));
 
 		OrderPage_4 Cday = new OrderPage_4(driver);
 		Cday.ccExpDay();
 		Select time = new Select(Cday.ExpiryDay);
-		// Thread.sleep(3000);
-		time.selectByVisibleText("25");
+		time.selectByVisibleText(read.getProperty("card_ExpiryDay"));
 	}
 
 	@Test(priority = 11)
@@ -133,6 +134,14 @@ public class TC_All {
 		OrderPage_4 clickOrder = new OrderPage_4(driver);
 		Thread.sleep(2000);
 		clickOrder.placeOrder();
+	}
+
+	public class TC05_OrderConfirmation extends Testcase_Baseclass {
+
+		public void orderConfirm() {
+			ComfirmOrder_5 order = new ComfirmOrder_5(driver);
+		order.confirmOrder();
+		}
 	}
 
 	@AfterClass

@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class TC_BaseClass {
+public class Testcase_Baseclass {
 	public WebDriver driver;
 	public Properties read;
 
