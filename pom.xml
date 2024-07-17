@@ -80,11 +80,7 @@
     <scope>test</scope>
 </dependency>
 
- 	<dependency>
- 		<groupId>OpenCartAutomation</groupId>
- 		<artifactId>OpenCartAutomationV101</artifactId>
- 		<version>0.0.1-SNAPSHOT</version>
- 	</dependency>
+
  </dependencies>
 
 </project>

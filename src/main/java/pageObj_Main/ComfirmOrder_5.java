@@ -17,8 +17,8 @@ public class ComfirmOrder_5 extends pageObjBaseclass  {
 	WebElement myOder;
 
 	// Actions
-	public String confirmOrder() {
-		return myOder.getText();
+	public void confirmOrder() {
+		System.out.println("Order display message: " + myOder.getText());
 
 	}
 

@@ -13,8 +13,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Tests_Base.Testcase_Baseclass;
-
 public class TC_All {
 	public WebDriver driver;
 	public Properties read;
@@ -132,17 +130,17 @@ public class TC_All {
 		land.optnCountry();
 
 		OrderPage_4 clickOrder = new OrderPage_4(driver);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		clickOrder.placeOrder();
 	}
 
-	public class TC05_OrderConfirmation extends Testcase_Baseclass {
-
-		public void orderConfirm() {
+	// TC 5 Order is successful
+	@Test(priority = 12)
+		public void orderConfirm() throws InterruptedException {
 			ComfirmOrder_5 order = new ComfirmOrder_5(driver);
-		order.confirmOrder();
+			Thread.sleep(3000);
+			order.confirmOrder();
 		}
-	}
 
 	@AfterClass
 	public void teardown() throws InterruptedException {
