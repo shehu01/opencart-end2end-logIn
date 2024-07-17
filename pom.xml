@@ -27,7 +27,7 @@
           
           <configuration>
 			<suiteXmlFiles>
-				<suiteXmlFile>testng.xml</suiteXmlFile>
+				<suiteXmlFile>master.xml</suiteXmlFile>
 			</suiteXmlFiles>
 		  </configuration>
         </plugin>
@@ -79,8 +79,6 @@
     <version>2.23.1</version>
     <scope>test</scope>
 </dependency>
-
-
  </dependencies>
 
 </project>

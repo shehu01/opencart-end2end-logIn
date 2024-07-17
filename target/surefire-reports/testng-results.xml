@@ -2,78 +2,78 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-17T16:38:45 CEST" name="AllTests" finished-at="2024-07-17T16:39:29 CEST" duration-ms="44350">
+  <suite started-at="2024-07-17T17:20:08 CEST" name="AllTests" finished-at="2024-07-17T17:20:53 CEST" duration-ms="45140">
     <groups>
     </groups>
-    <test started-at="2024-07-17T16:38:45 CEST" name="Test" finished-at="2024-07-17T16:39:29 CEST" duration-ms="44350">
+    <test started-at="2024-07-17T17:20:08 CEST" name="Test" finished-at="2024-07-17T17:20:53 CEST" duration-ms="45140">
       <class name="Test_Main.TC01_LogIn">
-        <test-method is-config="true" signature="start()[pri:0, instance:Test_Main.TC01_LogIn@12dae582]" started-at="2024-07-17T16:38:45 CEST" name="start" finished-at="2024-07-17T16:38:50 CEST" duration-ms="5598" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:Test_Main.TC01_LogIn@2654635]" started-at="2024-07-17T17:20:08 CEST" name="start" finished-at="2024-07-17T17:20:14 CEST" duration-ms="5858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="username()[pri:1, instance:Test_Main.TC01_LogIn@12dae582]" started-at="2024-07-17T16:38:51 CEST" name="username" finished-at="2024-07-17T16:38:53 CEST" duration-ms="2373" status="PASS">
+        <test-method signature="username()[pri:1, instance:Test_Main.TC01_LogIn@2654635]" started-at="2024-07-17T17:20:14 CEST" name="username" finished-at="2024-07-17T17:20:16 CEST" duration-ms="2446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username -->
-        <test-method signature="HomeBtn()[pri:2, instance:Test_Main.TC01_LogIn@12dae582]" started-at="2024-07-17T16:38:53 CEST" name="HomeBtn" finished-at="2024-07-17T16:38:55 CEST" duration-ms="2061" status="PASS">
+        <test-method signature="HomeBtn()[pri:2, instance:Test_Main.TC01_LogIn@2654635]" started-at="2024-07-17T17:20:16 CEST" name="HomeBtn" finished-at="2024-07-17T17:20:18 CEST" duration-ms="2058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomeBtn -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Main.TC01_LogIn@12dae582]" started-at="2024-07-17T16:38:55 CEST" name="teardown" finished-at="2024-07-17T16:38:57 CEST" duration-ms="2145" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Main.TC01_LogIn@2654635]" started-at="2024-07-17T17:20:18 CEST" name="teardown" finished-at="2024-07-17T17:20:21 CEST" duration-ms="2212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Test_Main.TC01_LogIn -->
       <class name="pageObj_Main.TC_All">
-        <test-method is-config="true" signature="start()[pri:0, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:38:57 CEST" name="start" finished-at="2024-07-17T16:39:02 CEST" duration-ms="4559" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:21 CEST" name="start" finished-at="2024-07-17T17:20:25 CEST" duration-ms="4540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="username()[pri:1, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:02 CEST" name="username" finished-at="2024-07-17T16:39:06 CEST" duration-ms="4396" status="PASS">
+        <test-method signature="username()[pri:1, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:25 CEST" name="username" finished-at="2024-07-17T17:20:30 CEST" duration-ms="4413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- username -->
-        <test-method signature="cart()[pri:3, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:06 CEST" name="cart" finished-at="2024-07-17T16:39:15 CEST" duration-ms="9426" status="PASS">
+        <test-method signature="cart()[pri:3, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:30 CEST" name="cart" finished-at="2024-07-17T17:20:39 CEST" duration-ms="9453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cart -->
-        <test-method signature="clickCart()[pri:4, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:15 CEST" name="clickCart" finished-at="2024-07-17T16:39:19 CEST" duration-ms="3114" status="PASS">
+        <test-method signature="clickCart()[pri:4, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:39 CEST" name="clickCart" finished-at="2024-07-17T17:20:42 CEST" duration-ms="3143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickCart -->
-        <test-method signature="confirm()[pri:5, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:19 CEST" name="confirm" finished-at="2024-07-17T16:39:19 CEST" duration-ms="29" status="PASS">
+        <test-method signature="confirm()[pri:5, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:42 CEST" name="confirm" finished-at="2024-07-17T17:20:42 CEST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirm -->
-        <test-method signature="allitems()[pri:6, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:19 CEST" name="allitems" finished-at="2024-07-17T16:39:19 CEST" duration-ms="217" status="PASS">
+        <test-method signature="allitems()[pri:6, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:42 CEST" name="allitems" finished-at="2024-07-17T17:20:42 CEST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allitems -->
-        <test-method signature="Checkout()[pri:7, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:19 CEST" name="Checkout" finished-at="2024-07-17T16:39:21 CEST" duration-ms="2428" status="PASS">
+        <test-method signature="Checkout()[pri:7, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:42 CEST" name="Checkout" finished-at="2024-07-17T17:20:45 CEST" duration-ms="2429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Checkout -->
-        <test-method signature="Email()[pri:8, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:21 CEST" name="Email" finished-at="2024-07-17T16:39:21 CEST" duration-ms="160" status="PASS">
+        <test-method signature="Email()[pri:8, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:45 CEST" name="Email" finished-at="2024-07-17T17:20:45 CEST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Email -->
-        <test-method signature="ccCard()[pri:9, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:21 CEST" name="ccCard" finished-at="2024-07-17T16:39:22 CEST" duration-ms="421" status="PASS">
+        <test-method signature="ccCard()[pri:9, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:45 CEST" name="ccCard" finished-at="2024-07-17T17:20:46 CEST" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ccCard -->
-        <test-method signature="CMonth()[pri:10, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:22 CEST" name="CMonth" finished-at="2024-07-17T16:39:22 CEST" duration-ms="526" status="PASS">
+        <test-method signature="CMonth()[pri:10, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:46 CEST" name="CMonth" finished-at="2024-07-17T17:20:46 CEST" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CMonth -->
-        <test-method signature="cardCVV()[pri:11, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:22 CEST" name="cardCVV" finished-at="2024-07-17T16:39:24 CEST" duration-ms="1626" status="PASS">
+        <test-method signature="cardCVV()[pri:11, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:46 CEST" name="cardCVV" finished-at="2024-07-17T17:20:48 CEST" duration-ms="1718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cardCVV -->
-        <test-method signature="orderConfirm()[pri:12, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:24 CEST" name="orderConfirm" finished-at="2024-07-17T16:39:27 CEST" duration-ms="3068" status="PASS">
+        <test-method signature="orderConfirm()[pri:12, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:48 CEST" name="orderConfirm" finished-at="2024-07-17T17:20:51 CEST" duration-ms="3055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderConfirm -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pageObj_Main.TC_All@5b057c8c]" started-at="2024-07-17T16:39:27 CEST" name="teardown" finished-at="2024-07-17T16:39:29 CEST" duration-ms="2119" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pageObj_Main.TC_All@15dcfae7]" started-at="2024-07-17T17:20:51 CEST" name="teardown" finished-at="2024-07-17T17:20:53 CEST" duration-ms="2101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
