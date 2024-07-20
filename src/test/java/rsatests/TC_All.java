@@ -1,4 +1,4 @@
-package pageObj_Main;
+package rsatests;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -12,6 +12,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import pageObj_Main.AddtoCart_2;
+import pageObj_Main.CheckCartItems_3;
+import pageObj_Main.ComfirmOrder_5;
+import pageObj_Main.LoginPage_1;
+import pageObj_Main.OrderPage_4;
 
 public class TC_All {
 	public WebDriver driver;

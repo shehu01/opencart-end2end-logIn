@@ -2,6 +2,7 @@ package pageObj_Main;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,7 +31,10 @@ public class CheckCartItems_3 extends pageObjBaseclass {
 	}
 
 	public void checkOut() {
-		checkout_Btn.click();
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", checkout_Btn);
+		// checkout_Btn.click();
 	}
 
 }

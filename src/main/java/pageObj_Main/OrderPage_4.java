@@ -2,16 +2,19 @@ package pageObj_Main;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import pageObj_Base.pageObjBaseclass;
+public class OrderPage_4 {
 
-public class OrderPage_4 extends pageObjBaseclass {
+	WebDriver driver;
 
 	public OrderPage_4(WebDriver driver) {
-		super(driver);
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 
 	// Locators .. Click CC
@@ -52,7 +55,7 @@ public class OrderPage_4 extends pageObjBaseclass {
 	public WebElement EnterLand;
 	@FindBy(xpath = ("(//*[@class='input txt text-validated'])[2]"))
 	public WebElement Ship_Country;
-	@FindBy(xpath = ("(//*[@class='ng-star-inserted']) [6]"))
+	@FindBy(xpath = ("(//*[@class='ng-star-inserted']) [5]"))
 	public WebElement selectCountry;
 	
 	//Click Place Order
@@ -83,7 +86,8 @@ public class OrderPage_4 extends pageObjBaseclass {
 	public void CardName (String Name) { CardName.sendKeys(Name);
 	}
 
-	public void CVV(String cvv) { Ccvv.sendKeys(cvv);
+	public void CVV(String cvv) {
+		Ccvv.sendKeys(cvv);
 	}
 
 	public void ccExpDay() {ExpiryDay.click();
@@ -113,8 +117,10 @@ public class OrderPage_4 extends pageObjBaseclass {
 	// }
 
 	public void placeOrder() {
-		btn_PlaceOrder1.click();
-	}
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", btn_PlaceOrder1);
+		// btn_PlaceOrder1.click();
+	}//
 
 	
 	

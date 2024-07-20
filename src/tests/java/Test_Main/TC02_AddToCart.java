@@ -1,6 +1,5 @@
 package Test_Main;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import Tests_Base.Testcase_Baseclass;
@@ -9,7 +8,8 @@ import pageObj_Main.AddtoCart_2;
 public class TC02_AddToCart extends Testcase_Baseclass {
 
 
-	WebDriver driver;
+	// WebDriver driver;
+
 
 	@Test(priority = 1)
 	public void cart() {
