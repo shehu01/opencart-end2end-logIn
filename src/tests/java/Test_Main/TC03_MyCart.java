@@ -18,7 +18,6 @@ public class TC03_MyCart extends Testcase_Baseclass {
 		the_cart.myCartProducts();
 		the_cart.clickcart();
 
-
 	}
 
 }

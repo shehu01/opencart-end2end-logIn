@@ -9,11 +9,10 @@ import org.testng.Assert;
 import pageObj_Base.pageObjBaseclass;
 
 public class LoginPage_1 extends pageObjBaseclass {
+
 	public LoginPage_1(WebDriver driver) {
 		super(driver);
 	}
-
-
 
 	@FindBy(css = ("input[id='userEmail']"))
 	WebElement userNamElement;
@@ -29,6 +28,7 @@ public class LoginPage_1 extends pageObjBaseclass {
 
 	///////////////////////////////////////
 	///////////////////////////////////////
+
 
 	// Input user Name
 	public void Username(String Name) {
@@ -51,7 +51,5 @@ public class LoginPage_1 extends pageObjBaseclass {
 		Assert.assertEquals(confirm, "HOME");
 		System.out.println(confirm + " page is displayed Successfuly");
 	}
-
-
 }
 

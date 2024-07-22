@@ -12,5 +12,4 @@ public class pageObjBaseclass {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
 }

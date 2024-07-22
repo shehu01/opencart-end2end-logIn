@@ -58,7 +58,4 @@ public class TC04_MyOrder extends Testcase_Baseclass {
 		usereMail.placeOrder();
 	}
 
-
-
-
 }

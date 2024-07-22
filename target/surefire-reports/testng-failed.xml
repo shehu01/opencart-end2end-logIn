@@ -3,13 +3,14 @@
 <suite name="Failed suite [AllTests]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="pageObj_Main.TC_All">
+      <class name="Test_Main.TC05_OrderConfirmation">
         <methods>
           <include name="teardown"/>
           <include name="start"/>
-          <include name="ccCard"/>
+          <include name="login"/>
+          <include name="orderConfirm"/>
         </methods>
-      </class> <!-- pageObj_Main.TC_All -->
+      </class> <!-- Test_Main.TC05_OrderConfirmation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [AllTests] -->

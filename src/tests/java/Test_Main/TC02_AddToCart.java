@@ -14,11 +14,12 @@ public class TC02_AddToCart extends Testcase_Baseclass {
 		super.login();
 	}
 
-	// Pick Items
+	// Search Items
 	@Test(priority = 2)
-	public void searchietm() {
+	public void searchietm() throws InterruptedException {
 		AddtoCart_2 search = new AddtoCart_2(driver);
 		search.searchItem(read.getProperty("search_item"));
+		Thread.sleep(2000);
 		super.goback();
 	}
 	
@@ -30,7 +31,5 @@ public class TC02_AddToCart extends Testcase_Baseclass {
 		AddtoCart_2 klick = new AddtoCart_2(driver);
 		klick.Cart_btn();
 		klick.myAccount();
-
-
 }
 }

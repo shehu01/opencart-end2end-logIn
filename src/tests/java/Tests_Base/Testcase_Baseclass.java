@@ -24,10 +24,10 @@ public class Testcase_Baseclass {
 	public Properties read;
 	public LoginPage_1 malo;
 
-
 	@BeforeClass
 	public void start() throws IOException {
-		FileReader shehureader = new FileReader("./src/resources/java/config.properties");
+		FileReader shehureader = new FileReader(
+				"//C:\\Users\\Abdul\\eclipse-workspace\\End2End\\src\\resources\\java\\config.properties");
 		read = new Properties();
 		read.load(shehureader);
 
@@ -75,5 +75,5 @@ public class Testcase_Baseclass {
 	}
 
 
-
+//./src/resources/java/config.properties
 }

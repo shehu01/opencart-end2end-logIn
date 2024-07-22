@@ -9,7 +9,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>End2End</name>
 	
-	
 	<build>
 		<!-- To define the plugin version in your parent POM -->
 		<pluginManagement>
@@ -27,11 +26,7 @@
 					</configuration>
 				</plugin>
 				
-				 
-
-       
-
-
+		   
 			</plugins>
 		</pluginManagement>
 	</build>
@@ -43,11 +38,13 @@
 	</properties>
 
 	<dependencies>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.22.0</version>
+    <version>4.21.0</version>
 </dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>

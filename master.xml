@@ -6,7 +6,8 @@
 		
 		<class name="Test_Main.TC01_LogIn"/>
       <class name="Test_Main.TC04_MyOrder"/>
-               
+       <class name="Test_Main.TC05_OrderConfirmation"/> 
+              
     </classes>
   </test> <!-- Test -->
 </suite> <!-- AllTests -->
