@@ -19,9 +19,10 @@ public class AddtoCart_2 {
 	}
 
 
-
-
 	// Locators
+	@FindBy(xpath = "(//input[@name='search'])[2]")
+	WebElement searchboxElement;
+
 	@FindBy(css = (".btn.w-10"))
 	List<WebElement> items;
 
@@ -31,32 +32,34 @@ public class AddtoCart_2 {
 	@FindBy(css = ("[class*='heading cf'] h1"))
 	WebElement MyAccount;
 
-	@FindBy(xpath = "(//input[@name='search'])[2]")
-	WebElement searchboxElement;
 
+	// TC codes
+	// Test the functionality of the search input box.
+	public void searchItem(String item) {
+		searchboxElement.sendKeys(item);
+		searchboxElement.sendKeys(Keys.ENTER);
+	}
 
-	// Methods
+	// Pick individual items and add to cart
 	public void additems() throws InterruptedException {
 		for (WebElement choose : items) {
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			choose.click();
 		}
 	}
 
+	// Click on cart to see items present in cart
 	public void Cart_btn() throws InterruptedException {
 		Thread.sleep(3000);
 		cart.click();
 	}
 
+	// Write out the list of items in cart
 	public void myAccount() {
 		Assert.assertEquals("My Cart", MyAccount.getText());
 
 	}
 
-	//
-	public void searchItem(String item) {
-		searchboxElement.sendKeys(item);
-		searchboxElement.sendKeys(Keys.ENTER);
-	}
+
 
 }

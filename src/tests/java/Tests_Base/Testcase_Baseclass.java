@@ -15,7 +15,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 
 import pageObj_Main.LoginPage_1;
 
@@ -24,7 +24,8 @@ public class Testcase_Baseclass {
 	public Properties read;
 	public LoginPage_1 malo;
 
-	@BeforeMethod
+
+	@BeforeClass
 	public void start() throws IOException {
 		FileReader shehureader = new FileReader("./src/resources/java/config.properties");
 		read = new Properties();
@@ -35,14 +36,23 @@ public class Testcase_Baseclass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
 		driver.get(read.getProperty("AppURL"));
 		System.out.println(driver.getTitle());
+	}
 
-		// Login
-		malo = new LoginPage_1(driver);
+	// Reusable for login in all TC
+	public void login() throws InterruptedException {
+		LoginPage_1 malo = new LoginPage_1(driver);
 		malo.Username(read.getProperty("User_Email"));
 		malo.Password(read.getProperty("User_Password"));
 		malo.LogIn();
+		// Confirm Login was successful
+		Thread.sleep(2000);
+		malo.msgConfirm();
 	}
 
+	// Reusable to go back
+	public void goback() {
+		driver.navigate().back();
+	}
 
 	public void Wait(By waiting) {
 		WebDriverWait duro = new WebDriverWait(driver, Duration.ofSeconds(5));

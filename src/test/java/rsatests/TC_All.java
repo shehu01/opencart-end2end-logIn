@@ -154,6 +154,4 @@ public class TC_All {
 		driver.close();
 	}
 
-
-
 }

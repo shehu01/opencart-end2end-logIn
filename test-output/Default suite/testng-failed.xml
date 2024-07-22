@@ -5,9 +5,10 @@
     <classes>
       <class name="Test_Main.TC04_MyOrder">
         <methods>
+          <include name="login"/>
           <include name="teardown"/>
           <include name="start"/>
-          <include name="searchProduct"/>
+          <include name="Email"/>
         </methods>
       </class> <!-- Test_Main.TC04_MyOrder -->
     </classes>

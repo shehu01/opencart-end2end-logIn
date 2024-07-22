@@ -8,33 +8,29 @@ import pageObj_Main.AddtoCart_2;
 public class TC02_AddToCart extends Testcase_Baseclass {
 
 
-	// WebDriver driver;
-
-
+	// Called from TC01. To complete this step
 	@Test(priority = 1)
-	public void cart() {
-		try {
+	public void login() throws InterruptedException {
+		super.login();
+	}
 
+	// Pick Items
+	@Test(priority = 2)
+	public void searchietm() {
+		AddtoCart_2 search = new AddtoCart_2(driver);
+		search.searchItem(read.getProperty("search_item"));
+		super.goback();
+	}
+	
+	@Test(priority = 3)
+	public void cart() throws InterruptedException {
 		AddtoCart_2 pick = new AddtoCart_2(driver);
-		Thread.sleep(2000);
 		pick.additems();
 
-	} catch (Exception e) {
-		System.out.println("TC002 was not executed");
-	}
-
-	}
-
-	@Test(priority = 2)
-	public void clickCart() throws InterruptedException {
 		AddtoCart_2 klick = new AddtoCart_2(driver);
 		klick.Cart_btn();
-	}
+		klick.myAccount();
 
-	@Test(priority = 3)
-	public void confirm() {
-		AddtoCart_2 MyAcc = new AddtoCart_2(driver);
-		MyAcc.myAccount();
-	}
 
+}
 }
